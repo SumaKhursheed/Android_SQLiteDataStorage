@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.sqlitedatastorage.SearchActivity">
+
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#fff"
+        android:text="Search Item"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="@drawable/borderstyle"
+        android:layout_above="@+id/button_search"
+        android:layout_alignRight="@+id/button_closeApp"
+        android:layout_alignEnd="@+id/button_closeApp"
+        android:layout_marginBottom="94dp" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_closeApp"
+        android:layout_alignBottom="@+id/button_closeApp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/button_closeApp"
+        android:layout_toStartOf="@+id/button_closeApp"
+        android:background="#008e00"
+        android:onClick="searchItem"
+        android:text="Search"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_closeApp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/output"
+        android:layout_alignEnd="@+id/output"
+        android:layout_alignRight="@+id/output"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#008e00"
+        android:onClick="back"
+        android:text="Cancel"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="347dp"
+        android:layout_height="140dp"
+        android:background="#6c6c6c"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+
+
+
+
+</RelativeLayout>

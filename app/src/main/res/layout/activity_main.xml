@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123350"
+    tools:context="com.example.sqlitedatastorage.MainActivity">
+
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#0f2037"
+        android:background="#fff"
+        android:text="New Products Database"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button_search"
+        android:layout_alignStart="@+id/button_search"
+        android:layout_below="@+id/textView_heading"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/insert"
+        android:gravity="center"
+        android:onClick="insertItem"
+        android:text="Insert New Item"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@drawable/search"
+        android:gravity="center"
+        android:text="Search Item"
+        android:onClick="searchItem"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_below="@+id/button_insert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp" />
+
+
+
+</RelativeLayout>
